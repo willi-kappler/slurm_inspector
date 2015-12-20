@@ -17,13 +17,19 @@ slurm_inspector is completely written in [Rust](https://www.rust-lang.org/) usin
 # Usage
 
 slurm_inspector offers the following command line options:
+
     -p --port=[PORT] Sets the port for the web GUI (default: 4545)
+    
     -i --interval=[INTERVAL] Sets the update interval (in sec.) for the web page (default: 60 sec.)
+    
     --test create test values, does not call sinfo or squeue
+    
     --loglevel=[LOGLEVEL] specify log level: error, info or debug
 
 For example:
+
     cargo run --release -- -p 1234 -i 120
+    
 will run slurm_inspector listening on port 1234 and refreshing the SLURM status every 120 seconds.
 Start your web browser and go to http://localhost:1234 (or http://myserver.com:1234)
 
