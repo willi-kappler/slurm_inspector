@@ -33,6 +33,8 @@ For example:
 will run slurm_inspector listening on port 1234 and refreshing the SLURM status every 120 seconds.
 Start your web browser and go to http://localhost:1234 (or http://myserver.com:1234)
 
+The file "slurm_inspector.conf" contains an example ubuntu service configuration (and some comments on how to install it)
+
 # TODO
 - Use https instead of http
 - Use login mechanism (user name and password)
