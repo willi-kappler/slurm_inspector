@@ -1,4 +1,4 @@
-// slurm_inspector V0.1 (2015.12.), written by Willi Kappler
+// slurm_inspector V0.1 (2015.12.20), written by Willi Kappler
 //
 // Licensed under the MIT License
 
