@@ -6,7 +6,7 @@ use clap::App;
 
 
 /// slurm_inspector configuration (from command line arguments)
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Configuration {
     /// Iron webframework port, default: 4545
     pub port: u16,
@@ -53,5 +53,5 @@ pub fn setup_configuration() -> Configuration {
 
 #[test]
 fn test_setup_configuration() {
-    assert_eq!(setup_configuration(), Configuration{ port: 4545, interval: 60 });
+    assert_eq!(setup_configuration(), Configuration{ port: 4545, interval: 60, test_mode: false, log_level: "info".to_string() });
 }

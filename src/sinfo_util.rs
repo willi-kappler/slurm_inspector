@@ -5,7 +5,7 @@
 use std::process::Command;
 
 /// PartitionAvailability, can be "up" or "down"
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum PartitionAvailability {
     /// SLURM Partition is up and available
     Up,
@@ -14,7 +14,7 @@ pub enum PartitionAvailability {
 }
 
 /// The ErrorCause why a SLURM partition is down
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum ErrorCause {
     Down,
     Drained,
@@ -25,7 +25,7 @@ pub enum ErrorCause {
 }
 
 /// The state of an individual node
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum NodeState {
     Allocated,
     Completing,
@@ -41,7 +41,7 @@ pub enum NodeState {
 }
 
 /// SLURM partition and node information
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct PartitionNodeInfo {
     pub partition: String,
     pub availability: PartitionAvailability,

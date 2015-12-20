@@ -5,7 +5,7 @@
 use std::process::Command;
 
 /// State reason, why is the job in the current state ?
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum StateReason {
         Dependency,
         None,
@@ -25,7 +25,7 @@ pub enum StateReason {
 }
 
 /// In which state is the current job in ?
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum JobState {
         Cancelled,
         Completed,
@@ -42,7 +42,7 @@ pub enum JobState {
 }
 
 /// All the information about a SLURM job
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct JobInfo {
     pub executing_host: String,
     pub minimum_cpu: Option<u32>,
