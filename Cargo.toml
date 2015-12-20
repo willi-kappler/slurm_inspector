@@ -1,0 +1,15 @@
+[package]
+name = "slurm_inspector"
+version = "0.1.0"
+authors = ["Willi Kappler, willi.kappler@uni-tuebingen.de"]
+
+[lib]
+name = "slurm_util"
+path = "src/slurm_util.rs"
+
+[dependencies]
+clap = "1"
+iron = "0.2"
+time = "0.1"
+flexi_logger = "0.3"
+log = "0.3"
