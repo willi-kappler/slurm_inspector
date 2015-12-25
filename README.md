@@ -15,6 +15,12 @@ slurm_inspector is completely written in [Rust](https://www.rust-lang.org/) usin
 2. Compile and run it with
     cargo run --release
 
+Since Iron is based on OpenSSL You may have to install the OpenSSL development package first.
+
+For ubuntu:
+
+    sudo apt-get install libssl-dev
+
 # Usage
 
 slurm_inspector offers the following command line options:
