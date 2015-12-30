@@ -1,6 +1,7 @@
 # About
 
 slurm_inspector V0.1 (2015.12.20), written by Willi Kappler
+
 Licensed under the MIT License
 
 This tool monitors the SLURM job management system (SLURM = Simple Linux Utility for Resource Management)
@@ -13,6 +14,12 @@ slurm_inspector is completely written in [Rust](https://www.rust-lang.org/) usin
 1. Obtain source code from github
 2. Compile and run it with
     cargo run --release
+
+Since Iron is based on OpenSSL You may have to install the OpenSSL development package first.
+
+For ubuntu:
+
+    sudo apt-get install libssl-dev
 
 # Usage
 
